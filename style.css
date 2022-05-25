@@ -1,0 +1,549 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Skiiiilllll */
+.barskill{
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.barskill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00d39b 0%, #27ebc7 100%);
+    
+}
+.html{
+    width: 80%;
+    animation: html 3s;
+}
+.css{
+    width: 40%;
+    animation: css 3s;
+}
+.php{
+    width: 10%;
+    animation: php 3s;
+}
+.node{
+    width: 10%;
+    animation: node 3s;
+}
+.flutter{
+    width: 20%;
+    animation: flutter 3s;
+}
+.mysql{
+    width: 15%;
+    animation: mysql 3s;
+}
+.js{
+    width: 40%;
+    animation: js 3s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes mysql {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+@keyframes php {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+
+@keyframes flutter {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+
+
+/***********/
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* all similar content styling codes */
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1500px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .sk, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.sk .sk-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #00BC9B;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    
+    background: #00BC9B;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #ffffff;
+    font-size: 15px;
+   
+}
+.navbar .logo a img{
+   width: 35px;
+}
+.navbar .logo a span{
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #00BC9B;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+body{
+    user-select: none;
+}
+.lien{
+    display: inline-block;
+    
+    color: #00BC9B;
+    font-size: 30px;
+    padding: 12px 17px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    border-radius: 50px;
+    border: 3.5px solid #00BC9B;
+    transition: all 0.3s ease;
+}
+.home .home-content a .lien:hover{
+    color: rgb(255, 255, 255);
+    background: none;
+}
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* home section styling */
+.home{
+    display: flex;
+    background-color:  #2E2E38;
+    /* background: url("images/banner.jpg") no-repeat center; */
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: #00BC9B;
+    font-weight: 500;
+}
+.home .home-content a:not(.lien){
+    display: inline-block;
+    background: #00BC9B;
+    color: #24242b;
+    font-size: 20px;
+    padding: 12px 14px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    border-radius: 50px;
+    border: 2px solid #00BC9B;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: #00BC9B;
+    background: none;
+}
+
+/* about section styling */
+.about, .sk{
+    background-color: #18181b;
+    color: white;
+}
+.sk{
+    background-color: #2a2a2e;
+    color: white;
+}
+
+section .title::before{
+    background: #fff;
+}
+/* .about .title::after{
+    content: "Qui suis-je";
+    background-color: #18181b;
+} */
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 500%;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: #00BC9B;
+}
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 20px;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: #00BC9B;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #00BC9B;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: #00BC9B;
+    background: none;
+}
+/********/
+.sk{
+    background-color: #2a2a2e;
+    color: white;
+}
+.sk .sk-content .left{
+    width: 45%;
+}
+.sk .sk-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 500%;
+}
+.sk .sk-content .right{
+    width: 55%;
+}
+.sk .sk-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.sk .sk-content .right .text span{
+    color: #00BC9B;
+}
+.sk .sk-content .right p{
+    text-align: justify;
+}
+.sk .sk-content .right a{
+    display: inline-block;
+    background: #00BC9B;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #00BC9B;
+    transition: all 0.3s ease;
+}
+.sk .sk-content .right a:hover{
+    color: #00BC9B;
+    background: none;
+}
+
+
+
+/* responsive media query start */
+@media (max-width: 1104px) {
+    .about .about-content .left img, .sk .sk-content .left img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: rgb(12, 8, 27);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    /**/
+    .sk .sk-content .column{
+        width: 100%;
+    }
+    .sk .sk-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .sk .sk-content .right{
+        flex: 100%;
+    }
+   
+  
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+   
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content .right .text,
+    .sk .sk-content .right .text{
+        font-size: 19px;
+    }
+
+    .right form .error-box{
+       width: 150px;
+    }
+
+}
