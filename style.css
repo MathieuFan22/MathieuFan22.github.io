@@ -277,7 +277,7 @@ body{
 /* home section styling */
 .home{
     display: flex;
-    background-color:  #2E2E38;
+    background-color: #18181b;
     /* background: url("images/banner.jpg") no-repeat center; */
     height: 100vh;
     color: #fff;
@@ -328,14 +328,11 @@ body{
 }
 
 /* about section styling */
-.about, .sk{
-    background-color: #18181b;
+.about{
+    background-color: #1b1b1d;
     color: white;
 }
-.sk{
-    background-color: #2a2a2e;
-    color: white;
-}
+
 
 section .title::before{
     background: #fff;
@@ -386,7 +383,7 @@ section .title::before{
 }
 /********/
 .sk{
-    background-color: #2a2a2e;
+    background-color: #131318;
     color: white;
 }
 .sk .sk-content .left{
