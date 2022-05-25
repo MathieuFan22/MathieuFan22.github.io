@@ -179,7 +179,9 @@ section .title{
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
+    border-bottom: #00d39b 3px solid;
 }
+
 
 section .title::after{
     position: absolute;

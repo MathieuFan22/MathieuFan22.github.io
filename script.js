@@ -23,20 +23,7 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: [ "Dev apprentice", "visual art enthusiast"],
-        typeSpeed: 150,
-        backSpeed: 60,
-        loop: true
-    });
 
-    var typed = new Typed(".typing-2", {
-        strings: [ "Dev apprentice", "visual art enthusiast"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
 
     
    
